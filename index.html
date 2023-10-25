@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora de Vendas</title>
+
+</head>
+
+<body>
+
+    <nav class="nav-container">
+        <img class="nav-logo" src="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png" alt="">
+        <a href="#">Vendas</a>
+        <a href="#">Custo</a>
+    
+    </nav>
+    <div class="container">
+        <h1>Calculadora de Vendas</h1>
+            <img class="img"
+            src="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png"
+            alt="">
+        <label for="valor">Inserir o valor:</label>
+        <input type="number" id="valor" step="1">
+
+        <label for="porcentagem">Insira a porcentagem a ser somada:</label>
+        <input type="number" id="porcentagem" step="1" min="0">
+
+        <button onclick="calcular()">Calcular</button>
+        <div class="resultado-container">
+            <div id="resultado1"></div>
+            <div id="resultado2"></div>
+            <div id="resultado3"></div>
+        </div>
+    </div>
+    <script>
+        function calcular() {
+            const valorInput = document.getElementById("valor");
+            const resultadoDiv1 = document.getElementById("resultado1");
+            const resultadoDiv2 = document.getElementById("resultado2");
+            const resultadoDiv3 = document.getElementById("resultado3");
+            const porcentagem = parseFloat(document.getElementById("porcentagem").value);
+
+            const valor = parseFloat(valorInput.value);
+            if (isNaN(valor)) {
+                resultadoDiv1.innerText = "Por favor, insira um valor válido.";
+                resultadoDiv2.innerText = "";
+                resultadoDiv3.innerText = "";
+            } else {
+                const resultado1 = (valor / 20 + 6) * (porcentagem / 100 + 1);
+                const resultado2 = (valor * 1.02 / 20 + 6) * (porcentagem / 100 + 1);
+                const resultado3 = (valor * 1.02 * 1.02 / 20 + 6) * (porcentagem / 100 + 1);
+                resultadoDiv1.innerText = `A VISTA: R$ ${resultado1.toFixed(2)}`;
+                resultadoDiv2.innerText = `30 DIAS: R$ ${resultado2.toFixed(2)}`;
+                resultadoDiv3.innerText = `60 DIAS: R$ ${resultado3.toFixed(2)}`;
+            }
+        }
+    </script>
+</body>
+
+</html>
