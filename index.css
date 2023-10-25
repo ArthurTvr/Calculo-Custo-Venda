@@ -60,6 +60,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 14px;
 }
 
 label {
@@ -104,7 +105,7 @@ button:hover{
     width: 100%;
     text-align: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: black;
 }
 .nav-container a{
@@ -120,4 +121,10 @@ button:hover{
     width: 70px;
 }
 
-
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 1px;
+}
