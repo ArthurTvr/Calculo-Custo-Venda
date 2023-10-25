@@ -80,11 +80,18 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #005cbe;
 }
 
 .resultado-container {
-    margin: 5px;
+    margin: 10px;
     font-size: 30px;
+    padding: 10px;
+    border: 1px solid  rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .img {
@@ -112,4 +119,5 @@ button {
 .nav-logo{
     width: 70px;
 }
+
 
