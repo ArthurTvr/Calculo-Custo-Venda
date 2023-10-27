@@ -12,27 +12,26 @@
 
 <body>
 
-    <nav class="nav-container">
+    <!-- <nav class="nav-container">
         <img class="nav-logo" src="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png" alt="">
         <a href="#">Vendas</a>
         <a href="#">Custo</a>
-    
-    </nav>
+
+    </nav> -->
     <div class="container">
         <h1>Calculadora de Vendas</h1>
-            <img class="img"
-            src="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png"
-            alt="">
-        <label for="valor">Inserir o valor da tonelada:</label>
-        <input type="number" id="valor" step="1">
+        <img class="img" src="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png" alt="">
+        <label for="valor"></label>
 
-        <label for="frete">Inserir o valor do frete:</label>
-        <input type="number" id="frete" step="0.1">
+        <input type="number" id="valor" step="1" placeholder="Inserir o valor da tonelada">
 
-        <label for="porcentagem">Insira a porcentagem a ser somada:</label>
-        <input type="number" id="porcentagem" step="1" min="0">
+        <label for="frete"></label>
+        <input type="number" id="frete" step="0.1" placeholder="Inserir o valor do frete">
 
-        <button onclick="calcular()" >Calcular</button>
+        <label for="porcentagem"></label>
+        <input type="number" id="porcentagem" step="1" min="0" placeholder="Insira a porcentagem a ser somada">
+
+        <button onclick="calcular()">Calcular</button>
         <div class="resultado-container">
             <div id="resultado1"></div>
             <div id="resultado2"></div>
@@ -41,8 +40,8 @@
     </div>
     <script>
         function calcular() {
-    
-            var a = document.querySelector('.resultado-container'); 
+
+            var a = document.querySelector('.resultado-container');
             const valorInput = document.getElementById("valor");
             const resultadoDiv1 = document.getElementById("resultado1");
             const resultadoDiv2 = document.getElementById("resultado2");
@@ -56,7 +55,7 @@
                 resultadoDiv3.innerText = "";
             } else {
                 a.style.display = 'block';
-                const resultado1 = (valor / 20 + frete) * (porcentagem / 100 + 1); 
+                const resultado1 = (valor / 20 + frete) * (porcentagem / 100 + 1);
                 const resultado2 = (valor * 1.02 / 20 + frete) * (porcentagem / 100 + 1);
                 const resultado3 = (valor * 1.02 * 1.02 / 20 + frete) * (porcentagem / 100 + 1);
                 resultadoDiv1.innerText = `A VISTA: R$ ${resultado1.toFixed(4)}`;
@@ -64,7 +63,8 @@
                 resultadoDiv3.innerText = `60 DIAS: R$ ${resultado3.toFixed(4)}`;
             }
         }
-    
+
     </script>
 </body>
+
 </html>

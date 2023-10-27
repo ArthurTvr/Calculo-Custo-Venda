@@ -26,7 +26,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 	line-height: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 20, 24);
 }
 ol, ul {
 	list-style: none;
@@ -46,9 +53,11 @@ table {
 
 body {
     font-family: Arial, sans-serif;
+    margin-top: 98px;
 }
 
 .container {
+   
     max-width: 400px;
     margin: 0 auto;
     padding: 36px;
@@ -62,35 +71,42 @@ body {
 }
 
 .container h1{
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 30px;
+    font-family: "General Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    
 }
 
 input {
+   
+    /* font-weight: bold; */
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 10px;
+    background-color: rgb(54, 54, 54);
     margin-bottom: 20px;
-    border: 1px solid rgb(86, 86, 86);
-    box-shadow: 0px 19px 10px -12px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+    /* border: 1px solid rgb(86, 86, 86); */
+    /* box-shadow: 0px 19px 10px -12px rgba(0,0,0,0.1); */
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #90caf9;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+
 }
 button:hover{
-    background-color: #005cbe;
+    background-color: #50a6ed;
 }
 
 .resultado-container {
@@ -99,7 +115,7 @@ button:hover{
     margin: 10px;
     font-size: 30px;
     padding: 10px;
-    border: 1px solid  rgb(0, 0, 0);
+    border: 1px solid  rgb(167, 167, 167);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
