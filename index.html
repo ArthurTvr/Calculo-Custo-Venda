@@ -23,7 +23,7 @@
             <img class="img"
             src="./assets/794dae5c-0ba5-4eac-8642-ac43590c54dd.png"
             alt="">
-        <label for="valor">Inserir o valor:</label>
+        <label for="valor">Inserir o valor da tonelada:</label>
         <input type="number" id="valor" step="1">
 
         <label for="frete">Inserir o valor do frete:</label>
@@ -32,7 +32,7 @@
         <label for="porcentagem">Insira a porcentagem a ser somada:</label>
         <input type="number" id="porcentagem" step="1" min="0">
 
-        <button onclick="calcular()">Calcular</button>
+        <button onclick="calcular()" >Calcular</button>
         <div class="resultado-container">
             <div id="resultado1"></div>
             <div id="resultado2"></div>
@@ -41,20 +41,21 @@
     </div>
     <script>
         function calcular() {
+    
+            var a = document.querySelector('.resultado-container'); 
             const valorInput = document.getElementById("valor");
             const resultadoDiv1 = document.getElementById("resultado1");
             const resultadoDiv2 = document.getElementById("resultado2");
             const resultadoDiv3 = document.getElementById("resultado3");
             const porcentagem = parseFloat(document.getElementById("porcentagem").value);
             const frete = parseFloat(document.getElementById("frete").value);
-
             const valor = parseFloat(valorInput.value);
             if (isNaN(valor)) {
                 resultadoDiv1.innerText = "";
                 resultadoDiv2.innerText = "";
                 resultadoDiv3.innerText = "";
             } else {
-               
+                a.style.display = 'block';
                 const resultado1 = (valor / 20 + frete) * (porcentagem / 100 + 1); 
                 const resultado2 = (valor * 1.02 / 20 + frete) * (porcentagem / 100 + 1);
                 const resultado3 = (valor * 1.02 * 1.02 / 20 + frete) * (porcentagem / 100 + 1);
@@ -63,11 +64,11 @@
                 resultadoDiv3.innerText = `60 DIAS: R$ ${resultado3.toFixed(2)}`;
             }
         }
+    
+        function aparecer(){
+        
+    
+        }
     </script>
 </body>
-
-    <footer>
-        <p>Desenvolvido por Arthur Tavares</p>
-    </footer>
-
 </html>
