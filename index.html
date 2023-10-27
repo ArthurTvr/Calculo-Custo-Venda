@@ -59,16 +59,12 @@
                 const resultado1 = (valor / 20 + frete) * (porcentagem / 100 + 1); 
                 const resultado2 = (valor * 1.02 / 20 + frete) * (porcentagem / 100 + 1);
                 const resultado3 = (valor * 1.02 * 1.02 / 20 + frete) * (porcentagem / 100 + 1);
-                resultadoDiv1.innerText = `A VISTA: R$ ${resultado1.toFixed(2)}`;
-                resultadoDiv2.innerText = `30 DIAS: R$ ${resultado2.toFixed(2)}`;
-                resultadoDiv3.innerText = `60 DIAS: R$ ${resultado3.toFixed(2)}`;
+                resultadoDiv1.innerText = `A VISTA: R$ ${resultado1.toFixed(4)}`;
+                resultadoDiv2.innerText = `30 DIAS: R$ ${resultado2.toFixed(4)}`;
+                resultadoDiv3.innerText = `60 DIAS: R$ ${resultado3.toFixed(4)}`;
             }
         }
     
-        function aparecer(){
-        
-    
-        }
     </script>
 </body>
 </html>
