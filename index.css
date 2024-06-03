@@ -118,7 +118,8 @@ button:hover{
 }
 
 .img {
-    width: 40%;
+    padding: 40px;
+    width: 43%;
 }
 .nav-container{
     border-bottom: 2px solid rgb(181, 181, 181);
