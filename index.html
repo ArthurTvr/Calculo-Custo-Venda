@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/logocomfundo.png">
+    <link rel="icon" href="./assets/logocomfundoteste.png">
     <link rel="stylesheet" href="index.css">
     <title>Calculadora de Vendas</title>
 
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <a href="https://sisferweb.fertipar.com.br/areadenegocio/login.xhtml;jsessionid=B-oAIJMLC3KILTRSg8KAHze0fkImC8sDF57It_TY.wfgrp2a:AREANEGOCIOS1"
+            target="_blank">Área de Negócios</a>
+        <a href="https://sisferweb.fertipar.com.br/agendamentocliente/login.xhtml;jsessionid=4OmyW2q_q78LSXFOX43yqD0S9AdbdGTx05X-dVWX.wfgrp4b:LOGISTICA2"
+            target="_blank">Agendamento FOB</a>
+        <a href="https://docs.google.com/spreadsheets/d/1qvnE4AQotgIjElyK1oP6GDoCMgxd-Bg8Ne_K5aQV0L8/edit#gid=1900898496"
+            target="_blank">Carteira</a>
+        <!-- <a href="#" target="_blank">Cotação (Planilha p/ postar)</a> -->
+        <a href="https://docs.google.com/spreadsheets/d/15bt8vI_xniGBQ9xt9vuK9c0Sd0KhoUfWj2Zz9Bqs7V4/edit#gid=773559138"
+            target="_blank">Logistica (Planilha acerto)</a>
+    </nav>
 
     <div class="container">
         <h1>Calculadora de Vendas</h1>
@@ -26,7 +38,7 @@
         <input type="number" id="porcentagem" step="1" min="0" placeholder="Insira a porcentagem a ser somada">
 
         <button onclick="calcular()">Calcular</button>
-        
+
         <div class="resultado-container">
             <div id="resultado1"></div>
             <div id="resultado2"></div>
@@ -51,8 +63,8 @@
             } else {
                 a.style.display = 'block';
                 const resultado1 = (valor / 20 + frete) * (porcentagem / 100 + 1);
-                const resultado2 = (valor  / 20 + frete) * 1.02 * (porcentagem / 100 + 1);
-                const resultado3 = (valor  / 20 + frete) * 1.02 * 1.02 * (porcentagem / 100 + 1);
+                const resultado2 = (valor / 20 + frete) * 1.02 * (porcentagem / 100 + 1);
+                const resultado3 = (valor / 20 + frete) * 1.02 * 1.02 * (porcentagem / 100 + 1);
                 resultadoDiv1.innerText = `A vista: R$ ${resultado1.toFixed(4)}`;
                 resultadoDiv2.innerText = `30 dias: R$ ${resultado2.toFixed(4)}`;
                 resultadoDiv3.innerText = `60 dias: R$ ${resultado3.toFixed(4)}`;
@@ -65,5 +77,7 @@
             body.classList.toggle("dark-mode");
         }
     </script>
+
 </body>
+
 </html>

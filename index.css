@@ -94,7 +94,8 @@ input {
 }
 
 button {
-    background-color: #90caf9;
+    /* background-color: #90caf9; */
+    background-color: #28953c;
     color: #000000;
     border: none;
     padding: 10px 20px;
@@ -104,7 +105,9 @@ button {
     margin: 20px;
 }
 button:hover{
-    background-color: #50a6ed;
+    /* background-color: #50a6ed; */
+    background-color: #155320;
+    color: white;
 }
 
 .resultado-container {
@@ -121,28 +124,8 @@ button:hover{
     padding: 40px;
     width: 43%;
 }
-.nav-container{
-    border-bottom: 2px solid rgb(181, 181, 181);
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 30px;
-    color: black;
-}
-.nav-container a{
-    color: black;
-    padding: 20px;
-    transition: 0.3s;
-}
-.nav-container a:hover{
-    background-color: #f07d00;
-    color: white;
-}
-.nav-logo{
-    width: 70px;
-}
+
+
 textarea:focus, input:focus {
     outline: 0;
 }
@@ -218,4 +201,44 @@ textarea:focus, input:focus {
     }
     input:checked + .slider:before {
         transform: translateX(26px);
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        font-size: 8px;
+        margin-bottom: 5px;
+        transition: 0.3s;
+    }
+
+    footer:hover{
+        font-size: 12px;
+
+    }
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        background-color: rgb(16, 20, 24);
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        justify-content: space-around;
+       
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .navbar a:hover {
+        background-color: #155320;
+        color: rgb(255, 255, 255);
     }
