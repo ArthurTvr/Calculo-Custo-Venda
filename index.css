@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,7 +54,8 @@ table {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Oswald", sans-serif;
     margin-top: 98px;
 }
 
@@ -72,7 +75,8 @@ body {
 
 .container h1{
     font-size: 30px;
-    font-family: "General Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* font-family: "General Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
+    font-family: "Oswald", sans-serif;
 }
 
 label {
@@ -229,6 +233,7 @@ textarea:focus, input:focus {
     }
     
     .navbar a {
+        font-size: 19px;
         float: left;
         display: block;
         color: #f2f2f2;
