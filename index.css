@@ -67,6 +67,7 @@ body {
     top: 0;
     z-index: 1000;
     justify-content: space-between;
+    flex-wrap: wrap;
    
 }
 
