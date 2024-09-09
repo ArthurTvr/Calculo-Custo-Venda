@@ -156,6 +156,7 @@ button:hover{
 .img {
     padding: 40px;
     width: 40%;
+    min-width: 160px;
 }
 
 
