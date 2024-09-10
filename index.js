@@ -1,5 +1,4 @@
 function calcular() {
-
     var a = document.querySelector('.resultado-container');
     const valorInput = document.getElementById("valor");
     const resultadoDiv1 = document.getElementById("resultado1");
@@ -22,9 +21,4 @@ function calcular() {
         resultadoDiv2.innerText = `30 dias: R$ ${resultado2.toFixed(4)}`;
         resultadoDiv3.innerText = `60 dias: R$ ${resultado3.toFixed(4)}`;
     }
-}
-
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('show');
 }
