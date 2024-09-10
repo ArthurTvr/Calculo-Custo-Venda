@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/logocomfundoteste.png">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Calculadora de Vendas</title>
-
 </head>
 
 <body>
 
     <nav class="navbar">
-        <a href="https://sisferweb.fertipar.com.br/areadenegocio/login.xhtml;jsessionid=B-oAIJMLC3KILTRSg8KAHze0fkImC8sDF57It_TY.wfgrp2a:AREANEGOCIOS1"
-            target="_blank">Área de Negócios</a>
-        <a href="https://sisferweb.fertipar.com.br/agendamentocliente/login.xhtml;jsessionid=4OmyW2q_q78LSXFOX43yqD0S9AdbdGTx05X-dVWX.wfgrp4b:LOGISTICA2"
-            target="_blank">Agendamento FOB</a>
-        <a href="https://docs.google.com/spreadsheets/d/1qvnE4AQotgIjElyK1oP6GDoCMgxd-Bg8Ne_K5aQV0L8/edit#gid=1900898496"
-            target="_blank">Carteira</a>
-        <!-- <a href="#" target="_blank">Cotação (Planilha p/ postar)</a> -->
-        <a href="https://docs.google.com/spreadsheets/d/162eUn153VJLBUJjBU_D1YO0n7IKKOelxwIbBZE3Wwyg/edit#gid=1282809007"
-            target="_blank">Logistica (Planilha acerto)</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="menu" id="menu">
+            <a href="https://sisferweb.fertipar.com.br/areadenegocio/login.xhtml" target="_blank">Área de Negócios</a>
+            <a href="https://sisferweb.fertipar.com.br/agendamentocliente/login.xhtml" target="_blank">Agendamento FOB</a>
+            <a href="https://docs.google.com/spreadsheets/d/1qvnE4AQotgIjElyK1oP6GDoCMgxd-Bg8Ne_K5aQV0L8/edit#gid=1900898496"
+                target="_blank">Carteira</a>
+            <a href="https://docs.google.com/spreadsheets/d/162eUn153VJLBUJjBU_D1YO0n7IKKOelxwIbBZE3Wwyg/edit#gid=1282809007"
+                target="_blank">Logistica</a>
+        </div>
     </nav>
 
     <div class="container">
@@ -46,7 +47,7 @@
             <div id="resultado3"></div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

@@ -150,21 +150,17 @@ body {
     display: flex;
     width: 100%;
     background-color: rgb(16, 20, 24);
-    overflow: hidden;
     position: fixed;
     top: 0;
     z-index: 1000;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+    justify-content: space-between; /* Isso garante que os links fiquem espaçados corretamente */
+    align-items: center;
+    padding: 10px;
 }
 
 .navbar a {
     font-size: 19px;
-    float: left;
-    display: block;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
@@ -258,9 +254,10 @@ input:focus {
     font-size: 24px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container {
         max-width: 70%;
+        margin-top: 200px;
     }
 }
 
@@ -269,5 +266,49 @@ input:focus {
     input,
     select {
         font-size: 16px;
+    }
+}
+
+/* Estilo do ícone do menu hambúrguer */
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Oculto por padrão */
+}
+
+/* Esconder o menu por padrão */
+.menu {
+    display: flex;
+    justify-content: space-between; /* Mantém os links espaçados igualmente */
+    flex-grow: 1;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(16, 20, 24);
+    }
+
+    .menu a {
+        padding: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
     }
 }
