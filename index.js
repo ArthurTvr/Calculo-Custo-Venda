@@ -7,11 +7,14 @@ function calcular() {
     const porcentagem = parseFloat(document.getElementById("porcentagem").value);
     const frete = parseFloat(document.getElementById("frete").value);
     const valor = parseFloat(valorInput.value);
+
+
     if (isNaN(valor)) {
         resultadoDiv1.innerText = "";
         resultadoDiv2.innerText = "";
         resultadoDiv3.innerText = "";
     } else {
+     
         a.style.display = 'block';
         a.style.backgroundColor = "#333333";
         const resultado1 = (valor / 20 + frete) * (porcentagem / 100 + 1);
