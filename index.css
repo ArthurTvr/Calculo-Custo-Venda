@@ -291,4 +291,10 @@ input:focus {
     max-width: 400px;
     margin: 0 auto;
     color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#app h1{
+    color: rgb(225, 225, 225);
+    font-weight: bold;
+    font-size: 18px;
 }
