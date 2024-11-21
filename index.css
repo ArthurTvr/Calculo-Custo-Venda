@@ -279,4 +279,5 @@ input:focus {
     font-size: 10px;
     font-weight: bold;
     flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
