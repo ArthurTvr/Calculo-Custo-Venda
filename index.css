@@ -112,10 +112,12 @@ body {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    flex-direction: column;
     line-height: 1;
     color: rgb(255, 255, 255);
     background-color: rgb(16, 20, 24);
-    /* position: absolute; */
+    font-family: "Oswald", sans-serif;
+    margin-top: 98px;
 }
 
 ol,
@@ -141,11 +143,7 @@ table {
     border-spacing: 0;
 }
 
-body {
-    /* font-family: Arial, sans-serif; */
-    font-family: "Oswald", sans-serif;
-    margin-top: 98px;
-}
+
 
 .navbar {
     display: flex;
@@ -203,8 +201,6 @@ label {
 }
 
 input {
-
-    /* font-weight: bold; */
     color: rgb(255, 255, 255);
     width: 100%;
     padding: 10px;
@@ -212,11 +208,9 @@ input {
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid rgb(255, 255, 255);
-
 }
 
 button {
-
     background-color: #28953c;
     color: #000000;
     border: none;
@@ -280,3 +274,9 @@ input:focus {
     padding-bottom: 2px;
     color: #ccc;
 }
+
+#clock {
+    font-size: 10px;
+    font-weight: bold;
+    flex-direction: column;
+} 

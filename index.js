@@ -25,3 +25,24 @@ function calcular() {
         resultadoDiv3.innerText = `60 dias: R$ ${resultado3.toFixed(4)}`;
     }
 }
+
+function updateClock() {
+    const clockElement = document.getElementById("clock");
+    const now = new Date();
+    const options = { 
+        weekday: 'short', 
+        year: 'numeric', 
+        month: 'short', 
+        day: 'numeric', 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit' 
+    };
+    clockElement.textContent = now.toLocaleDateString('pt-BR', options);
+}
+
+// Atualiza o relógio a cada segundo
+setInterval(updateClock, 1000);
+
+// Exibe a hora imediatamente ao carregar a página
+updateClock();
