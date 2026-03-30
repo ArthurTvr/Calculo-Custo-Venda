@@ -1,4 +1,4 @@
-const ultimaData = "31/03/2026";
+const ultimaData = "29/03/2026";
 
 const [diaU, mesU, anoU] = ultimaData.split("/");
 const dataFinal = new Date(anoU, mesU - 1, diaU);
@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (diferencaDias > 0) {
     document.addEventListener("click", () => {
       alert(
-        "SUA LICENÇA ESTÁ VENCIDA. ENTRE EM CONTATO COM O SUPORTE SE QUISER COMPRAR A NOVA LICENÇA DE USO.",
+        "SUA LICENÇA ESTÁ VENCIDA. ENTRE EM CONTATO PARA ASSINAR A NOVA LICENÇA DE USO.",
       );
     });
-    window.alert(`LICENÇA EXPIRADA HÁ ${diferencaDias} DIA(S)`);
+    // window.alert(`LICENÇA EXPIRADA HÁ ${diferencaDias} DIA(S)`);
     overlay.style.display = "block";
   } else if (diferencaDias === 0) {
     // window.alert("SUA LICENÇA EXPIRA HOJE");
