@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (diferencaDias > 0) {
     document.addEventListener("click", () => {
       alert(
-        "SUA LICENÇA ESTÁ VENCIDA. ENTRE EM CONTATO COM O SUPORTE PARA RENOVAR A LICENÇA",
+        "SUA LICENÇA ESTÁ VENCIDA. ENTRE EM CONTATO COM O SUPORTE SE QUISER COMPRAR A NOVA LICENÇA DE USO.",
       );
     });
     window.alert(`LICENÇA EXPIRADA HÁ ${diferencaDias} DIA(S)`);
