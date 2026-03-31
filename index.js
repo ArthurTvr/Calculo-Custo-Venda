@@ -1,4 +1,4 @@
-const ultimaData = "31/03/2026";
+const ultimaData = "05/04/2026";
 
 const [diaU, mesU, anoU] = ultimaData.split("/");
 const dataFinal = new Date(anoU, mesU - 1, diaU);
